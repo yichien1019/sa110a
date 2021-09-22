@@ -21,9 +21,9 @@
 ![](pic/sa.jpg)
 * 軟體工程是一門研究用工程化方式建構和維護有效的、實用的和高質量的軟體的學科。他涉及到程式設計語言、資料庫、軟體開發工程、系統平台、標準、設計等模式方面。
 ### 🔖 模型簡介
-#### [瀑布模型](https://zh.wikipedia.org/wiki/%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B)
+#### 📍 [瀑布模型](https://zh.wikipedia.org/wiki/%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B)
 ![](pic/waterfallmode.JPG)
-#### [螺旋模型](https://zh.wikipedia.org/wiki/%E8%9E%BA%E6%97%8B%E6%A8%A1%E5%9E%8B)
+#### 📍 [螺旋模型](https://zh.wikipedia.org/wiki/%E8%9E%BA%E6%97%8B%E6%A8%A1%E5%9E%8B)
 ![](pic/spiralmode.png)
 
 ## 📖 GITHUB如何加入[ssh key設定](https://programmermedia.org/root/%E9%99%B3%E9%8D%BE%E8%AA%A0/%E6%8A%80%E8%83%BD/git.md)
