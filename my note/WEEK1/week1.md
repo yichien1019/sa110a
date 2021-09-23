@@ -61,6 +61,14 @@ $ cat /c/Users/yichien/.ssh/id_rsa.pub
 * `$ deno run --allow-read 檔案名.副檔名` or `$ deno run -A 檔案名.副檔名`
 >EX : `$ deno run --allow-read read.js` or `$ deno run -A read.js`
 
+
+## 📖 什麼是[Big-O](https://zh.wikipedia.org/wiki/%E5%A4%A7O%E7%AC%A6%E5%8F%B7)
+![](pic/bigo.png)
+* 經常用於衡量一段程式碼的時間複雜度，在程式執行時，具有"執行時間"與"記憶體空間"兩種概念，而時間複雜度就是指程式的"執行時間"。
+### 🔖 常用的函式階
+![](pic/bigochart.JPG)
+
+
 ## 💻 程式實際操作
 ### 🔗 alg/00-complexity/basic/hello.js
 ![](pic/hello.JPG)
@@ -74,13 +82,44 @@ Hello, 你好！
 ### 🔗 alg/00-complexity/basic/read.js
 ![](pic/read.JPG)
 #### The result of execution
+* 因為有權限控制，所以需要加`--allow-read`或是`-A`
 ```
-yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa/alg/00-complexity/basic (master)   
+yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa/alg/00-complexity/basic (master)
+$ deno run read.js                                                             
+error: Uncaught PermissionDenied: Requires read access to "read.js", run again 
+with the --allow-read flag
+const data = Deno.readTextFileSync("read.js");
+                  ^
+    at deno:core/01_core.js:106:46
+    at unwrapOpResult (deno:core/01_core.js:126:13)
+    at Object.opSync (deno:core/01_core.js:140:12)
+    at openSync (deno:runtime/js/40_files.js:37:22)
+    at Object.readTextFileSync (deno:runtime/js/40_read_file.js:30:18)
+    at file:///D:/VScode/WP/ccc/110a/sa/alg/00-complexity/basic/read.js:2:19   
+
+yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa/alg/00-complexity/basic (master)  
 $ deno run -A read.js
 // https://doc.deno.land/builtin/stable#Deno.readTextFile
 const data = Deno.readTextFileSync("read.js");
 console.log(data);
 ```
+
+### 🔗 alg/00-complexity/bigO/binSearchArray.js 
+![](pic/binSearchArray.JPG)
+#### The result of execution
+```
+yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa/alg/00-complexity/bigO (master)
+$ deno run binSearchArray.js 
+t= 2
+t= null
+t= 5
+t= null
+```
+
+### 🔗 alg/00-complexity/bigO/binSearchArray.js 
+![](pic/binSearchArray.JPG)
+#### The result of execution
+
 
 ## 📖 補充資料
 * [ccckmit 用20分鐘搞懂 《系統分析、軟體工程、專案管理與設計模式》](https://www.slideshare.net/ccckmit/20-57269452)
