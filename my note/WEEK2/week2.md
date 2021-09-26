@@ -2,7 +2,18 @@
 ## 📖 
 ### 🔖 
 #### 📍 
-
+## 📖 [紅黑樹(Red–black tree)](https://zh.wikipedia.org/wiki/%E7%BA%A2%E9%BB%91%E6%A0%91)
+* 紅黑樹是一種自平衡二元搜尋樹，是在電腦科學中用到的一種資料結構，典型用途是實現關聯陣列。
+* 它的操作有著良好的最壞情況執行時間，並且在實踐中高效：它可以在Big-O(log n)時間內完成尋找、插入和刪除，這裡的n是樹中元素的數目。
+![](pic/rbtree.jpg)
+### 🔖 紅黑樹性質
+1. 節點是紅色或黑色
+2. 根節點是黑色
+3. 每個葉節點（NIL或者空節點）是黑色
+4. 如果一個節點是紅色，則它的兩個子節點都是黑色
+5. 對於每個節點，從該節點到其所有後代葉節點的路徑上，均包含相同數目的黑色節點
+#### 📍 補充說明
+![](pic/rbtreeps.JPG)
 
 ## 💻 程式實際操作
 ### 🔗 sa/alg/01-tableLookup/fiboanacci/fiboanacci.js
@@ -140,3 +151,5 @@ time:1ms
 
 
 ## 📖 補充資料
+* [資料結構與演算法：紅黑樹（Red Black Tree）](https://www.itread01.com/content/1546725999.html)
+* [紅黑樹（Red Black Tree）介紹](https://tigercosmos.xyz/post/2019/11/algorithm/red-black-tree/)
