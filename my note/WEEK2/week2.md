@@ -15,6 +15,12 @@
 #### 📍 補充說明
 ![](pic/rbtreeps.JPG)
 
+## 📖 [巴斯卡三角形](https://zh.wikipedia.org/wiki/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92%E5%BD%A2)
+![](pic/PascalTriangle.gif)
+* 巴斯卡三角形第 n 層（頂層稱第 0 層，第 1 行，第 n 層即第 n+1 行，此處n 為包含 0 在內的自然數）正好對應於二項式 (a+b)^n展開的係數。例如第二層 1 2 1 是冪指數為 2 的二項式 (a+b)^2 展開形式 a^{2}+2ab+b^{2}的係數
+### 🔖 
+#### 📍
+
 ## 💻 程式實際操作
 ### 🔗 sa/alg/01-tableLookup/fiboanacci/fiboanacci.js
 ![](pic/fibonacci.JPG)
