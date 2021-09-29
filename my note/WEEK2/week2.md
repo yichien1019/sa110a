@@ -39,7 +39,7 @@
 * 數列 : 1, 1, 2, 3, 5, 8, 13, 21, 34, 55......
 
 ## 💻 程式實際操作
-### 🔗 sa/alg/01-tableLookup/fiboanacci/fiboanacci.js
+### 🔗 alg/01-tableLookup/fiboanacci/fiboanacci.js
 ![](pic/fibonacci.JPG)
 <details>
   <summary><b>Show code</b></summary>
@@ -75,7 +75,7 @@ yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa/alg/01-tableLookup/fiboanacci (mast
 $ deno run fibonacci.js
 ```
 
-### 🔗 sa/alg/01-tableLookup/fiboanacci/fibonacci_lookup.js
+### 🔗 alg/01-tableLookup/fiboanacci/fibonacci_lookup.js
 ![](pic/fibonaccilookup.JPG)
 <details>
   <summary><b>Show code</b></summary>
@@ -126,7 +126,7 @@ fib[]= [
 ]
 ```
 
-### 🔗 sa/alg/01-tableLookup/fiboanacci/fibonacci_loop.js
+### 🔗 alg/01-tableLookup/fiboanacci/fibonacci_loop.js
 ![](pic/fibonacciloop.JPG)
 <details>
   <summary><b>Show code</b></summary>
@@ -162,17 +162,142 @@ fibonacci(100)=354224848179262000000
 time:1ms
 ```
 
+### 🔗 alg/01-tableLookup/combinatorial/CnkR.js
+![](pic/CnkR.JPG)
+<details>
+  <summary><b>Show code</b></summary>
+
+  ```
+function c(n, k) {
+  if (k==0 || k==n) return 1
+  return c(n-1, k) + c(n-1, k-1)
+}
+
+console.log("c(5,2)=", c(5,2))
+console.log("c(7,3)=", c(7,3))
+console.log("c(12,5)=", c(12,5))
+console.log("c(60,30)=", c(60,30))
+
+  ```
+</details>
+
+#### The result of execution
+```
+yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa/alg/01-tableLookup/combinatorial (master)
+$ deno run CnkR.js
+c(5,2)= 10
+c(7,3)= 35  
+c(12,5)= 792
+```
+
+### 🔗 alg/01-tableLookup/combinatorial/CnkRLookup.js 
+![](pic/CnkRLookup.JPG)
+<details>
+  <summary><b>Show code</b></summary>
+
+  ```
+var C = []
+
+function c(n, k) {
+  if (C[n] == null) C[n] = []
+  if (C[n][k] != null) return C[n][k]
+  if (k==0 || k==n)
+    C[n][k] = 1
+  else 
+    C[n][k] = c(n-1,k) + c(n-1, k-1)
+  return C[n][k]
+}
+
+console.log("c(5,2)=", c(5,2))
+console.log("C=", C);
+console.log("c(7,3)=", c(7,3))
+console.log("c(12,5)=", c(12,5))
+console.log("c(60,30)=", c(60,30))
+  ```
+</details>
+
+#### The result of execution
+```
+yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa/alg/01-tableLookup/combinatorial (master)
+$ deno run CnkRLookup.js 
+c(5,2)= 10
+C= [
+  <1 empty item>,
+  [ 1, 1 ],
+  [ 1, 2, 1 ],
+  [ 1, 3, 3 ],
+  [ <1 empty item>, 4, 6 ],
+  [ <2 empty items>, 10 ]  
+]
+c(7,3)= 35
+c(12,5)= 792
+c(60,30)= 118264581564861420
+```
+
+### 🔗 alg/01-tableLookup/combinatorial/Cnk.js 
+![](pic/Cnk.JPG)
+<details>
+  <summary><b>Show code</b></summary>
+
+  ```
+function factorial(n) {
+  var p = 1
+  for (let i=1; i<=n; i++) {
+    p = p * i;
+  }
+  return p
+}
+
+function c(n, k) {
+  return factorial(n) / (factorial(k)*factorial(n-k))
+}
+
+console.log("c(5,2)=", c(5,2))
+console.log("c(7,3)=", c(7,3))
+console.log("c(12,5)=", c(12,5))
+console.log("c(60,30)=", c(60,30))
+  ```
+</details>
+
+#### The result of execution
+* 超過整數範圍精準度不正確，會有誤差!!!(因為大整數)
+```
+yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa/alg/01-tableLookup/combinatorial (master)
+$ deno run Cnk.js 
+c(5,2)= 10
+c(7,3)= 35
+c(12,5)= 792
+c(60,30)= 118264581564861470
+```
+
 ### 🔗 
+![](pic/)
+<details>
+  <summary><b>Show code</b></summary>
+
+  ```
+  ```
+</details>
+
 #### The result of execution
 ```
 ```
 
 ### 🔗 
+![](pic/)
+<details>
+  <summary><b>Show code</b></summary>
+
+  ```
+  ```
+</details>
+
 #### The result of execution
 ```
 ```
-
 
 ## 📖 補充資料
 * [資料結構與演算法：紅黑樹（Red Black Tree）](https://www.itread01.com/content/1546725999.html)
 * [紅黑樹（Red Black Tree）介紹](https://tigercosmos.xyz/post/2019/11/algorithm/red-black-tree/)
+* [補充 :「巴斯卡定理」有什麼意義？
+](https://tpdjdje0525.medium.com/%E5%B7%B4%E6%96%AF%E5%8D%A1%E5%AE%9A%E7%90%86-%E6%9C%89%E4%BB%80%E9%BA%BC%E6%84%8F%E7%BE%A9-21690183d2d1)
