@@ -236,6 +236,7 @@ c(60,30)= 118264581564861420
 
 ### 🔗 alg/01-tableLookup/combinatorial/Cnk.js 
 ![](pic/Cnk.JPG)
+* 排列組合之組合
 <details>
   <summary><b>Show code</b></summary>
 
@@ -270,6 +271,98 @@ c(12,5)= 792
 c(60,30)= 118264581564861470
 ```
 
+### 🔗 alg/01-tableLookup/combinatorial/CnkBig.js
+![](pic/CnkBig.JPG)
+<details>
+  <summary><b>Show code</b></summary>
+
+  ```
+function factorial(n) {
+  var p = 1n
+  for (let i=1n; i<=n; i++) {
+    p = p * i;
+  }
+  return p
+}
+
+function c(n, k) {
+  return factorial(n) / (factorial(k)*factorial(n-k))
+}
+
+console.log("c(5,2)=", c(5,2))
+console.log("c(7,3)=", c(7,3))
+console.log("c(12,5)=", c(12,5))
+console.log("c(60,30)=", c(60,30))
+console.log("c(600,300)=", c(600,300))
+  ```
+</details>
+
+#### The result of execution
+* BigInt 是透過在一個數值後加上 n ，例如 10n ，或呼叫 BigInt() 所生成的
+```
+yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa/alg/01-tableLookup/combinatorial (master)
+$ deno run CnkBig.js 
+c(5,2)= 10n
+c(7,3)= 35n
+c(12,5)= 792n
+c(60,30)= 118264581564861424n
+c(600,300)= 135107941996194268514474877978504530397233945449193479925965721786474150408005716961950480198274469818673334131365837249043900490761151591695308427048536947621976068789875968372656n
+```
+
+### 🔗alg/01-tableLookup/factorial/factorial.js  
+![](pic/factorial.JPG)
+<details>
+  <summary><b>Show code</b></summary>
+
+  ```
+function factorial(n) {
+  var p = 1
+  for (let i=1; i<=n; i++) {
+    p = p * i;
+  }
+  return p
+}
+
+console.log('factorial(60)=', factorial(60))
+  ```
+</details>
+
+* 算階層，例如 : 5!=5*4*3*2*1 = 120
+
+#### The result of execution
+```
+yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa/alg/01-tableLookup/factorial (master)
+$ deno run factorial.js 
+factorial(60)= 8.320987112741392e+81
+```
+
+### 🔗 alg/01-tableLookup/factorial/factorialBig.js
+![](pic/factorialBig.JPG)
+<details>
+  <summary><b>Show code</b></summary>
+
+  ```
+function factorial(n) {
+  var p = 1n
+  for (let i=1n; i<=n; i++) {
+    p = p * i;
+  }
+  return p
+}
+
+console.log('factorial(60)=', factorial(60n))
+  ```
+</details>
+
+#### The result of execution
+* BigInt 是一個內建的物件，提供了表示大於2^53的整數的功能 (2^53是JavaScript原生的Number能夠表示的最大值)
+* BigInt 是透過在一個數值後加上 n ，例如 10n ，或呼叫 BigInt() 所生成的
+```
+yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa/alg/01-tableLookup/factorial (master)
+$ deno run factorialBig.js 
+factorial(60)= 8320987112741390144276341183223364380754172606361245952449277696409600000000000000n
+```
+
 ### 🔗 
 ![](pic/)
 <details>
@@ -299,5 +392,5 @@ c(60,30)= 118264581564861470
 ## 📖 補充資料
 * [資料結構與演算法：紅黑樹（Red Black Tree）](https://www.itread01.com/content/1546725999.html)
 * [紅黑樹（Red Black Tree）介紹](https://tigercosmos.xyz/post/2019/11/algorithm/red-black-tree/)
-* [補充 :「巴斯卡定理」有什麼意義？
+* [補充:巴斯卡定理」有什麼意義？]
 ](https://tpdjdje0525.medium.com/%E5%B7%B4%E6%96%AF%E5%8D%A1%E5%AE%9A%E7%90%86-%E6%9C%89%E4%BB%80%E9%BA%BC%E6%84%8F%E7%BE%A9-21690183d2d1)

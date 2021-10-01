@@ -5,27 +5,10 @@
 
 ```
 
-## 📖 GIT
-## 📖 workflow
-
+## 📖 GIT/GITHUB用法
+### 🔖 合作開發
+* 先使用fork，再將對方設定成upstream才能更新
 ```
-yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa110a (master)
-$ git branch
-* master
-
-yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa110a (master)
-$ git checkout -b add_code
-Switched to a new branch 'add_code'
-
-yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa110a (add_code)
-$ git branch
-* add_code
-  master 
-  
-yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa110a (add_code)
-$ git checkout master
-Switched to branch 'master' 
-
 yichien@MSI MINGW64 /d/VScode/WP/ccc/dsi2598- (add)
 $ git remote add upstream https://github.com/Chen-Chun/dsi2598-.git
 
@@ -49,7 +32,7 @@ From https://github.com/Chen-Chun/dsi2598-
  * [new branch]      main       -> upstream/main
 
 yichien@MSI MINGW64 /d/VScode/WP/ccc/dsi2598- ((2ea3949...))
-$ git checkout upstream/add_girl
+$ git checkout upstream/add_girl  
 HEAD is now at 2ea3949 add
 
 yichien@MSI MINGW64 /d/VScode/WP/ccc/dsi2598- ((2ea3949...))
@@ -57,6 +40,34 @@ $ git pull upstream add_girl
 From https://github.com/Chen-Chun/dsi2598-
  * branch            add_girl   -> FETCH_HEAD
 Already up to date.
+```
+## 📖 workflow
+
+```
+yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa110a (master)
+$ git branch
+* master
+
+yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa110a (master)
+$ git checkout -b add_code
+Switched to a new branch 'add_code'
+
+yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa110a (add_code)
+$ git branch
+* add_code
+  master 
+  
+yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa110a (add_code)
+$ git checkout master
+Switched to branch 'master' 
+
+
+
+
+
+
+
+
 ```
 * `.gitignore` : 可以避免回傳這些類型的檔案
 EX.
@@ -70,3 +81,4 @@ bak
 
 ## 📖 補充資料
 * [Git 工作流程](https://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
+* [git / github 的用法](https://programmermedia.org/root/%E9%99%B3%E9%8D%BE%E8%AA%A0/%E6%8A%80%E8%83%BD/git.md)
