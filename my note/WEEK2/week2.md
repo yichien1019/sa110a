@@ -1,7 +1,4 @@
 # 📝軟體工程與演算法第二週筆記20210922
-## 📖 
-### 🔖 
-#### 📍 
 ## 📖 [紅黑樹(Red–black tree)](https://zh.wikipedia.org/wiki/%E7%BA%A2%E9%BB%91%E6%A0%91)
 * 紅黑樹是一種自平衡二元搜尋樹，是在電腦科學中用到的一種資料結構，典型用途是實現關聯陣列。
 * 它的操作有著良好的最壞情況執行時間，並且在實踐中高效：它可以在Big-O(log n)時間內完成尋找、插入和刪除，這裡的n是樹中元素的數目。
@@ -37,6 +34,18 @@
 * f(1) = 1
 * f(n) = f(n-1) + f(n-2)
 * 數列 : 1, 1, 2, 3, 5, 8, 13, 21, 34, 55......
+
+## 📖 傳統作法 & BDD & TDD
+### 🔖 傳統作法
+* 先寫程式再寫測試
+### 🔖 BDD (Behavior-driven Development 行為驅動開發)
+* BDD 是 TDD 的進化版，在寫測試前先寫測試規格書，這份規格不是單純的敘述文件，而是一份「可以被執行的規格」
+* 因為其程式語法描述其極接近日常口語，相當簡單易懂，也可以執行，所以可以讓非技術人員一起參與討論
+### 🔖 TDD (Test-driven Development 測試驅動開發)
+* 先寫測試再寫開發程式
+* 依循「紅燈／綠燈／重構」循環
+* 優點是在初期就確保測試程式的撰寫，而且更容易在初期定義出更貼近使用方的介面
+* 缺點是所撰寫出來的測試案例是一連串程式碼，過於偏重技術人員，不利與其他非技術的專案參與者討論
 
 ## 💻 程式實際操作
 ### 🔗 alg/01-tableLookup/fiboanacci/fiboanacci.js
@@ -363,32 +372,6 @@ $ deno run factorialBig.js
 factorial(60)= 8320987112741390144276341183223364380754172606361245952449277696409600000000000000n
 ```
 
-### 🔗 
-![](pic/)
-<details>
-  <summary><b>Show code</b></summary>
-
-  ```
-  ```
-</details>
-
-#### The result of execution
-```
-```
-
-### 🔗 
-![](pic/)
-<details>
-  <summary><b>Show code</b></summary>
-
-  ```
-  ```
-</details>
-
-#### The result of execution
-```
-```
-
 ## 📖 補充資料
 * [資料結構與演算法：紅黑樹（Red Black Tree）](https://www.itread01.com/content/1546725999.html)
 * [紅黑樹（Red Black Tree）介紹](https://tigercosmos.xyz/post/2019/11/algorithm/red-black-tree/)
@@ -396,3 +379,4 @@ factorial(60)= 83209871127413901442763411832233643807541726063612459524492776964
 ](https://tpdjdje0525.medium.com/%E5%B7%B4%E6%96%AF%E5%8D%A1%E5%AE%9A%E7%90%86-%E6%9C%89%E4%BB%80%E9%BA%BC%E6%84%8F%E7%BE%A9-21690183d2d1)
 * [BigInt](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/BigInt)
 * [為什麼 Float和Double會有誤差 (浮點數儲存原理)](https://dotblogs.com.tw/daniel/2018/11/10/161148)
+* [TDD/BDD and Test Double](https://medium.com/hobo-engineer/ricky%E7%AD%86%E8%A8%98-tdd-bdd-and-test-double-76eee9e75092)
