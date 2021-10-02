@@ -394,3 +394,5 @@ factorial(60)= 83209871127413901442763411832233643807541726063612459524492776964
 * [紅黑樹（Red Black Tree）介紹](https://tigercosmos.xyz/post/2019/11/algorithm/red-black-tree/)
 * [補充:巴斯卡定理」有什麼意義？]
 ](https://tpdjdje0525.medium.com/%E5%B7%B4%E6%96%AF%E5%8D%A1%E5%AE%9A%E7%90%86-%E6%9C%89%E4%BB%80%E9%BA%BC%E6%84%8F%E7%BE%A9-21690183d2d1)
+* [BigInt](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/BigInt)
+* [為什麼 Float和Double會有誤差 (浮點數儲存原理)](https://dotblogs.com.tw/daniel/2018/11/10/161148)
