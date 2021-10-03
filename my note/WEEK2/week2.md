@@ -304,7 +304,7 @@ console.log("c(12,5)=", c(12,5))
 console.log("c(60,30)=", c(60,30))
 console.log("c(600,300)=", c(600,300))
   ```
-</details>
+</details>   
 
 #### The result of execution
 * BigInt 是透過在一個數值後加上 n ，例如 10n ，或呼叫 BigInt() 所生成的
