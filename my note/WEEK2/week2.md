@@ -281,7 +281,7 @@ c(60,30)= 118264581564861470
 ```
 
 ### 🔗 alg/01-tableLookup/combinatorial/CnkBig.js
-![](pic/CnkBig.JPG)
+
 <details>
   <summary><b>Show code</b></summary>
 
