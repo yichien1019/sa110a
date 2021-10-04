@@ -1,14 +1,50 @@
 # 📝軟體工程與演算法第三週筆記20210929
-## 📖 
-### 🔖 
+## 📖 正規軍 V.S. 特種部隊
+### 🔖 正規軍 (瀑布模式)
+* 傳統模式，像是一些大公司，EX : Microsoft、IBM、CMMI
+* 需求明確、技術能力夠，可以採用此模式
+### 🔖 特種部隊 (螺旋模式)
+* 敏捷開發，EX : Scrum、XP
+* 高效率的面對面溝通、品質焦點
+
 #### 📍 
-## 📖 workflow
+## 📖 合作開發 (WORKFLOW)
+### 🔖 GITHUB FLOW操作步驟
+順序 | 主控者 | 貢獻者
+---- | ----- | -----
+1 | 創建專案 | 
+2 | 創建分支 | 
+3 |  | fork專案
+4 |  | clone專案
+5 |  | 修改程式
+6 |  | 測試程式
+7 |  | 創建分支
+8 |  | 回推檔案
+9 |  | 發pull resquest
+10| 測試程式 | 
+11| 收pull resquest | 
+12| 合併分支到主要分支 | 
+
+### 🔖 分支的創建與轉換
+```
+yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa110a (master)
+$ git branch
+* master
+
+yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa110a (master)
+$ git checkout -b add_code
+Switched to a new branch 'add_code'
+
+yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa110a (add_code)
+$ git branch
+* add_code
+  master 
+  
+yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa110a (add_code)
+$ git checkout master
+Switched to branch 'master' 
 ```
 
-```
-
-## 📖 GIT/GITHUB用法
-### 🔖 合作開發
 * 先使用fork，再將對方設定成upstream才能更新
 ```
 yichien@MSI MINGW64 /d/VScode/WP/ccc/dsi2598- (add)
@@ -43,34 +79,7 @@ From https://github.com/Chen-Chun/dsi2598-
  * branch            add_girl   -> FETCH_HEAD
 Already up to date.
 ```
-## 📖 workflow
-
-```
-yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa110a (master)
-$ git branch
-* master
-
-yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa110a (master)
-$ git checkout -b add_code
-Switched to a new branch 'add_code'
-
-yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa110a (add_code)
-$ git branch
-* add_code
-  master 
-  
-yichien@MSI MINGW64 /d/VScode/WP/ccc/110a/sa110a (add_code)
-$ git checkout master
-Switched to branch 'master' 
-
-
-
-
-
-
-
-
-```
+* `git log` : 可以看到過去送出的版本紀錄
 * `.gitignore` : 可以避免回傳這些類型的檔案
 EX.
 ```
