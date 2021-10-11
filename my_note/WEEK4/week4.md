@@ -60,10 +60,5 @@ You can now add the webhook to your repository.
 * [Git 工作流程](https://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
 
 
-manage access 可以加入人 cowork
-## 📖 
-### 🔖 
-
-
 
 🖊️ editor : yi-chien Liu
