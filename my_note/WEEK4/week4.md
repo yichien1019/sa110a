@@ -55,6 +55,15 @@ You can now add the webhook to your repository.
     8. Select only the `Branch` or `tag creation` event.
     9. Press `Add webhook`.
 
+## 📖 GITHUB 加入共同編輯
+#### 📍 操作步驟 : 
+* `Settings`
+* `Manage access`
+* `Add people`
+* Add a collaborator to <專案名稱>
+* 輸入 <使用者>
+* Choose a role
+* Add <使用者> to this repository
 
 ## 📖 補充資料
 * [Git 工作流程](https://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
