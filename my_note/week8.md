@@ -32,6 +32,16 @@ Verilog
 跑數位不會跑類比
 四選一多公器
 
+CMOS NOT閘 
+* 互補式 PMOS + NMOS = CMOS
+CMOS形成的積體電路稱為IC
+耗電率低
+Series Transistors
+以開關表示 
+    PMOS -> 0關 1開 (無圈圈)
+    NMOS -> 0開 1關 (有圈圈)
+多功器可以轉換為CMOS
+可程式硬體 : PLA PROM PAL
 
 
 
