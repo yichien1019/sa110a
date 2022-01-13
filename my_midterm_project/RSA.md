@@ -1,4 +1,5 @@
 ## 📖 RSA加密演算法
+> 文件中參考自[陳鍾誠的《軟體工程與演算法》課程 -- 110 上學期](https://gitlab.com/ccc110/sa/-/tree/master/alg/14-cryptography/03-RSA)的程式碼輔助理解邏輯
 * RSA是由羅納德·李維斯特（Ron Rivest）、阿迪·薩莫爾（Adi Shamir）和倫納德·阿德曼（Leonard Adleman）在1977年一起提出的
 * 世界上還沒有任何可靠的攻擊RSA演算法的方式。只要其鑰匙的長度足夠長，用RSA加密的訊息實際上是不能被破解的
 
