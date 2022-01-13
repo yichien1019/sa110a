@@ -32,6 +32,6 @@
 ![](pic/IP-1.JPG)
 > 最終排列其實就是初始排列的逆運算
 
-#### 👉分析
+## 📖 參考資料
 * [《區塊密碼1》DES(1)- 加密過程](https://ithelp.ithome.com.tw/articles/10266443?sc=iThelpR)
 

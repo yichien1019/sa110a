@@ -73,8 +73,6 @@
 ## 📖 參考資料
 * [密碼學-維基百科](https://zh.wikipedia.org/wiki/%E5%AF%86%E7%A0%81%E5%AD%A6)
 * [非對稱式加密演算法-RSA (觀念篇)](https://ithelp.ithome.com.tw/articles/10250721)
-* 
-* 
 
 
 🖊️ editor : yi-chien Liu
