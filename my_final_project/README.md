@@ -17,7 +17,7 @@
 * 建置完成 <br>
 ![](pic/file.JPG)
 ### 🔖 寫測試程式
-* 自己試寫的MyCod執行檔
+* 自己試寫的[MyCode2](/CccTestProject/CccTestProject/MyCode2.cs)
 ```
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -91,9 +91,8 @@ namespace CccTestProject
 }
 ```
 
-
 ### 🔖 寫單元測試
-* MyCode2的測試檔
+* [MyCode2的測試檔](/CccTestProject/CccTestProject/MyCodeTest2.cs)
 ```
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
