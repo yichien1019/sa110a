@@ -14,7 +14,7 @@
 * 新增專案 > 選擇MSTest 測試專案 > 建立
 * [MSTest 官方介紹](https://docs.microsoft.com/zh-tw/dotnet/core/testing/unit-testing-with-mstest)
 ![](pic/before.JPG)
-* 建置完成
+* 建置完成 <br>
 ![](pic/file.JPG)
 ### 🔖 寫測試程式
 * 自己試寫的MyCod執行檔
@@ -164,13 +164,13 @@ namespace CccTestProject
 ```
 ### 🔖 執行測試
 * 開啟 Test Explorer : 上方工具列 > 測試 > Test Explorer > Run All > 得到結果
-* 測試成功
+* 測試成功 <br>
 ![](pic/testexplorertrue.JPG)
-* 測試錯誤
+* 測試錯誤 <br>
 ![](pic/testexplorerfalse.JPG)
 
 ### 🔖 驗證 (Assert)
-* Assert 語法就是寫單元測試中的關鍵了，用以判斷實際得到的結果與預期的結果是否相符。若 Assert 是 True，則測試會通過
+* Assert 語法就是寫單元測試中的關鍵了，用以判斷實際得到的結果與預期的結果是否相符。若 Assert 是 True，則測試會通過 <br>
 ![](pic/mycode2.JPG)
 
 >Arrange: 初始化<br>
