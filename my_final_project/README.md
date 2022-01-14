@@ -17,82 +17,41 @@
 * 建置完成 <br>
 ![](pic/file.JPG)
 ### 🔖 寫測試程式
-* 自己試寫的[MyCode2](/CccTestProject/CccTestProject/MyCode2.cs)
+* 自己試寫的[MyCode2](https://github.com/yichien1019/sa110a/blob/master/my_final_project/CccTestProject/CccTestProject/MyCode2.cs)
 ```
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace CccTestProject
 {
-    [TestClass()]
-    public class MyCode2Test
+    public class MyCode2
     {
-        public int a = 10, b = 5;
-        [TestMethod()]
-        public void AddnumTest()
+        public int Addnum(int a,int b)   //�ۥ[
         {
-            //assert
-            var Sut = new MyCode2();
-            var expected = 15;
-            
-            //arrange
-            var actual = Sut.Addnum(10,5);
-            //act
-            Assert.AreEqual(expected, actual);
+            return a + b;
         }
-        [TestMethod()]
-        public void SubnumTest()
+        public int Subnum(int a, int b)   
         {
-            //assert
-            var Sut = new MyCode2();
-            var expected = 5;
-
-            //arrange
-            var actual = Sut.Subnum(10,5);
-            //act
-            Assert.AreEqual(expected, actual);
+            return a - b;
         }
-        [TestMethod()]
-        public void MultnumTest()
+        public int Multnum(int a, int b)   
         {
-            //assert
-            var Sut = new MyCode2();
-            var expected = 50;
-
-            //arrange
-            var actual = Sut.Multnum(10,5);
-            //act
-            Assert.AreEqual(expected, actual);
+            return a * b;
         }
-        [TestMethod()]
-        public void DivnumTest()
+        public int Divnum(int a, int b)
         {
-            //assert
-            var Sut = new MyCode2();
-            var expected = 2;
-
-            //arrange
-            var actual = Sut.Divnum(10,5);
-            //act
-            Assert.AreEqual(expected, actual);
+            return a / b;
         }
-        [TestMethod()]
-        public void ModnumTest()
+        public int Modnum(int a, int b)   
         {
-            //assert
-            var Sut = new MyCode2();
-            var expected = 0;
-
-            //arrange
-            var actual = Sut.Modnum(10,5);
-            //act
-            Assert.AreEqual(expected, actual);
+            return a % b;
         }
     }
 }
 ```
 
 ### 🔖 寫單元測試
-* [MyCode2的測試檔](/CccTestProject/CccTestProject/MyCodeTest2.cs)
+* [MyCode2的測試檔](https://github.com/yichien1019/sa110a/blob/master/my_final_project/CccTestProject/CccTestProject/MyCodeTest2.cs)
 ```
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -101,7 +60,9 @@ namespace CccTestProject
     [TestClass()]
     public class MyCode2Test
     {
+        //public int a, b;
         [TestMethod()]
+        
         public void AddnumTest()
         {
             //assert
@@ -136,6 +97,7 @@ namespace CccTestProject
             //act
             Assert.AreEqual(expected, actual);
         }
+
         [TestMethod()]
         public void DivnumTest()
         {
@@ -147,6 +109,7 @@ namespace CccTestProject
             //act
             Assert.AreEqual(expected, actual);
         }
+
         [TestMethod()]
         public void ModnumTest()
         {
